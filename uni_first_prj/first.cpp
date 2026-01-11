@@ -18,54 +18,85 @@
 //     return 0;
 // }
 
-// Online C++ compiler to run C++ program online
+// // Online C++ compiler to run C++ program online
 #include <iostream>
 using namespace std;
 
-int a;
-int b;
+int a, b;
 
-void Sum(int a, int b)
+void Sum(double a, double b)
 {
     cout << "The Sum: " << a << " + " << b << " = " << a + b << endl;
 }
 
-void Subs(int a, int b)
+void Subs(double a, double b)
 {
     cout << "The Substraction: " << a << " - " << b << " = " << a - b << endl;
 }
 
-void Multiply(int a, int b)
+void Multiply(double a, double b)
 {
     cout << "The Multiply: " << a << " * " << b << " = " << a * b << endl;
 }
 
-void Division(int a, int b)
+void Division(double a, double b)
 {
     if (b == 0)
     {
-        cout << "Something division by 0 = ∞, try again Valid Numbers."
+        cout << "Something division by 0 = ∞, try again with Valid Numbers.";
     }
-    cout << "The Division: " << a << " ÷ " << b << " = " << a / b << endl;
+    else
+    {
+
+        cout << "The Division: " << a << " ÷ " << b << " = " << a / b << endl;
+    }
 }
 
 int main()
 {
 
+    double num1, num2, result;
+    char operatr, more;
+
     cout << "Welcome, Get Started using Calculator" << endl;
+    do
+    {
+        cout << "First number: " << endl;
+        cin >> num1;
 
-    int num1, num2, operator, result;
+        cout << "Pick Operator ( + - * / ): " << endl;
+        cin >> operatr;
 
-    cout << "First number: " << endl;
-    cin >> num1;
+        cout << "Second number: " << endl;
+        cin >> num2;
 
-    cout << "Pick Operator ( + - * / ): " << endl;
-    cin >> operator;
+        switch (operatr)
+        {
+        case '+':
+            Sum(num1, num2);
+            break;
+        case '-':
+            Subs(num1, num2);
+            break;
+        case '*':
+            Multiply(num1, num2);
+            break;
+        case '/':
+            Division(num1, num2);
+            break;
+        default:
+            cout << "Invalid Operation on operands have been done, try again.";
+            break;
+        }
 
-    cout << "Second number: " << endl;
-    cin >> num2;
+        cout << "\nWould you like to have more Calculations ? [enter y to continue, n to quit].";
+        cin.ignore(1000, '\n'); // This clears the "Enter" key leftover from num2
+        cin >> more;
 
-    Sum(4, 5);
+        // cin >> more;
 
+    } while (more == 'y' || more == 'Y');
+
+    cout << "Sadly, but Goodbye." << endl;
     return 0;
 }
