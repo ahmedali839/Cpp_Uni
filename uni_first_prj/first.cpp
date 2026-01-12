@@ -1,24 +1,3 @@
-// // Online C++ compiler to run C++ program online
-// #include <iostream>
-// using namespace std;
-
-// int a;
-// int b;
-
-// void Sum (int a, int b) {
-//     cout << "The Sum: " << a << " + " << b << " = " << a + b << endl;
-// }
-
-// int main() {
-
-//     cout << "Welcome, Get Started using Calculator" << endl;
-
-//     Sum(4, 5);
-
-//     return 0;
-// }
-
-// // Online C++ compiler to run C++ program online
 #include <iostream>
 using namespace std;
 
@@ -61,13 +40,13 @@ int main()
     cout << "Welcome, Get Started using Calculator" << endl;
     do
     {
-        cout << "First number: " << endl;
+        cout << "Enter First number: " << endl;
         cin >> num1;
 
         cout << "Pick Operator ( + - * / ): " << endl;
         cin >> operatr;
 
-        cout << "Second number: " << endl;
+        cout << "Enter Second number: " << endl;
         cin >> num2;
 
         switch (operatr)
@@ -92,8 +71,6 @@ int main()
         cout << "\nWould you like to have more Calculations ? [enter y to continue, n to quit].";
         cin.ignore(1000, '\n'); // This clears the "Enter" key leftover from num2
         cin >> more;
-
-        // cin >> more;
 
     } while (more == 'y' || more == 'Y');
 
