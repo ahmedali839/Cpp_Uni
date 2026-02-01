@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    cout << "Name: Ahmed" << endl;
+    cout << "Name: Ahmed." << endl;
     cout << "Registration Number: #25151219-999" << endl;
     cout << "Department: BSCS" << endl;
 
