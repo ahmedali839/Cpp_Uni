@@ -9,7 +9,7 @@ using namespace std;
 void counter()
 {
     static int count = 0;    // editable / modifiable as static
-    const int non_count = 0; // non-editable / non-modifiable as const
+    const int non_count = 0; // it's non-editable / non-modifiable as const
 
     count++;
     cout << non_count << endl;
