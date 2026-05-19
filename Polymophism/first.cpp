@@ -25,7 +25,7 @@ public:
     {
         cout << "public: " << x << endl;
         cout << "protected: " << y << endl;
-        privateValue();
+        privateValue(); // function to get private value access
         // cout << "private: " << z << endl;
     }
 };
