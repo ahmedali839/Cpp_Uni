@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
     cout << "Aslam u Alaikum" << endl;
 
     return 0;
