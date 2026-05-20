@@ -5,25 +5,25 @@ class Shape
 {
 
 public:
-    // virtual void draw() = 0;
+    virtual void draw() = 0;
 };
 
-// class Circle : public Shape
-// {
-// public:
-//     void draw()
-//     {
-//         cout << "Drawing Circle";
-//     }
-// };
+class Circle : public Shape
+{
+public:
+    void draw()
+    {
+        cout << "Drawing Circle";
+    }
+};
 
 int main()
 {
-    Shape s1;
-    // s1.draw();
+    //     Shape s1; // abstract classes are not allowed directly
+    //     s1.draw();
 
-    // Circle c1;
-    // c1.draw();
+    Circle c1;
+    c1.draw();
 
     return 0;
 }
