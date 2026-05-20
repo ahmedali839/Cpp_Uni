@@ -13,7 +13,7 @@ public:
     Distance operator+(Distance d)
     {
         Distance temp;
-        temp.meter = meter + d.meter;
+        temp.meter = meter + d.meter;//
         return temp;
     }
 
