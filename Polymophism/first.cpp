@@ -11,7 +11,7 @@ public:
     int x = 1;
     void privateValue()
     {
-        cout << "private: " << this->z << endl; // d
+        cout << "private: " << this->z << endl;
     }
 
 protected:
