@@ -24,38 +24,71 @@
 //     s1.display();
 // }
 
+// #include <iostream>
+// using namespace std;
+
+// class Complex
+// {
+// private:
+//     int real, imag;
+
+// public:
+//     Complex(int r = 0, int i = 0)
+//     {
+//         real = r;
+//         imag = i;
+//     }
+//     Complex operator+(Complex c)
+//     {
+//         return Complex(real + c.real, imag + c.imag);
+//     }
+
+//     void display()
+//     {
+//         cout << real << " + " << imag << "i";
+//     }
+// };
+
+// int main()
+// {
+//     Complex c1(2, 3), c2(4, 5);
+
+//     Complex c3 = c1 + c2;
+
+//     c3.display();
+
+//     return 0;
+// }
+
 #include <iostream>
 using namespace std;
 
-class Complex
+class Distance
 {
 private:
-    int real, imag;
+    int meter;
 
 public:
-    Complex(int r = 0, int i = 0)
+    Distance() { meter = 0; }
+    Distance(int m) { meter = m; }
+
+    Distance operator+(Distance d)
     {
-        real = r;
-        imag = i;
-    }
-    Complex operator+(Complex c)
-    {
-        return Complex(real + c.real, imag + c.imag);
+        Distance temp;
+        temp.meter = meter + d.meter;
+        return temp;
     }
 
     void display()
     {
-        cout << real << " + " << imag << "i";
+        cout << meter << " meters.";
     }
 };
 
 int main()
 {
-    Complex c1(2, 3), c2(4, 5);
+    Distance d1(5), d2(10), d3;
+    d3 = d1 + d2;
 
-    Complex c3 = c1 + c2;
-
-    c3.display();
-
-    return 0;
+    d3.display();
 }
