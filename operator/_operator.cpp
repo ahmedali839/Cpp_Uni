@@ -87,7 +87,7 @@ public:
 
 int main()
 {
-    Distance d1(5), d2(10), d3; // here updated 
+    Distance d1(5), d2(10), d3;
     d3 = d1 + d2;
 
     d3.display();
