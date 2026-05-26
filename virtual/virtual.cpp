@@ -57,7 +57,7 @@ int main()
     ptr = &d;
     ptr->show();
 
-    // for Example-2 Pure Virtual 
+    // for Example-2 Pure Virtual Functions
     Circle c;
     c.draw();
 
