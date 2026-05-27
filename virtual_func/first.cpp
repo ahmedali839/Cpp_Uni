@@ -1,8 +1,30 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int a = 2;
+class Animal
+{
 
-    cout << "a: " << a << endl;
+public:
+    virtual void Speak() 
+    {
+        cout << " Speaking animals." << endl;
+    }
+};
+
+class Horse : public Animal
+{
+public:
+    void Speak()
+    {
+        cout << " Hekh cheekh, heck cheekh." << endl;
+    }
+};
+
+int main()
+{
+    Animal *a = new Horse();
+    a->Speak();
+    delete a;
+
+    return 0;
 }
