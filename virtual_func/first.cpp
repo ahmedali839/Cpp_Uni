@@ -16,7 +16,7 @@ class Horse : public Animal
 public:
     void Speak()
     {
-        cout << " Hekh cheekh, heck cheekh." << endl; // here 
+        cout << " Hekh cheekh, heck cheekh." << endl; // here it's virtual functions
     }
 };
 
