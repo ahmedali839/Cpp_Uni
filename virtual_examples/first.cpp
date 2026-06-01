@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int a;
-    cout << "a: " << a << endl; // displaying
+    cout << "a: " << a << endl;
 
     return 0;
 }
