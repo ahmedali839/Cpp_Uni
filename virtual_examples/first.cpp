@@ -6,6 +6,6 @@ int main()
     int a;
     cout << "a: " << a << endl; // displaying "a" values
 
-    // hey the 
+    // hey the values are here
     return 0;
 }
