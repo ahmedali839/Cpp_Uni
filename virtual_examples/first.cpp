@@ -70,26 +70,32 @@ public:
 // // one parent class copy uses for lots of nested child classes
 class AbstractClass
 {
+
+private:
+    int PrivateX = 10;
+
 public:
+    friend class Child1;
     void show()
     {
         cout << "AbstractClass Show" << endl;
     }
     ~AbstractClass()
     {
-        cout << "AbstractClass Desconstructed" << endl;
+        cout << "AbstractClass Desconstructed, " << PrivateX << endl;
     }
 };
 class Child1 : virtual public AbstractClass
 {
+
 public:
     void show()
     {
         cout << "Child1 Show" << endl;
     }
-    ~Child1()
+    ~Child1(AbstractClass x)
     {
-        cout << "Child1 Desconstructed" << endl;
+        cout << "Child1 Desconstructed, " << x.PrivateX << endl;
     }
 };
 class Child2 : virtual public AbstractClass
@@ -101,7 +107,7 @@ public:
     }
     ~Child2()
     {
-        cout << "Child2 Desconstructed" << endl;
+        cout << "Child2 Desconstructed" < < < < endl;
     }
 };
 class NestedChild1 : public Child1, public Child2
