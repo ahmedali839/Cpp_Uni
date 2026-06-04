@@ -93,7 +93,7 @@ public:
     {
         cout << "Child1 Show" << endl;
     }
-    ~Child1(AbstractClass x) // desconstructor function of class
+    ~Child1(AbstractClass x)
     {
         cout << "Child1 Desconstructed, " << x.PrivateX << endl;
     }
