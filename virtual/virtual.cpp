@@ -1,11 +1,34 @@
 #include <iostream>
+#include <cstring>
 using namespace std;
 
-class Shape
+class Base
 {
 
 public:
-    virtual void draw() = 0;
+    virtual void show()
+    {
+        cout << "Base Class Show()" << endl;
+    };
+};
+
+class Derived : public Base
+{
+public:
+    void show()
+    {
+        cout << "Derived Class Show()" << endl;
+    }
+};
+
+// Example-2 Pure Virtual function
+class Shape
+{
+public:
+    virtual void draw()
+    {
+        cout << "Drawing Parent(Shape)" << endl; // pure virtual function
+    };
 };
 
 class Circle : public Shape
@@ -13,17 +36,30 @@ class Circle : public Shape
 public:
     void draw()
     {
-        cout << "Drawing Circle";
+        cout << "Drawing Circle" << endl;
+    }
+};
+
+class Rectangle : public Shape
+{
+public:
+    void draw()
+    {
+        cout << "Drawing Rectangle" << endl;
     }
 };
 
 int main()
 {
-    //     Shape s1; // abstract classes are not allowed directly
-    //     s1.draw();
+    Base *ptr;
+    Derived d;
 
-    Circle c1;
-    c1.draw();
+    ptr = &d;
+    ptr->show();
 
-    return 0;
+    // for Example-2 Pure Virtual Functions here's
+    Circle c;
+    c.draw();
+
+    // return 0;
 }
