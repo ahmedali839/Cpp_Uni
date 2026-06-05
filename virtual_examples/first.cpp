@@ -95,7 +95,7 @@ public:
     }
     ~Child1(AbstractClass x)
     {
-        cout << "Child1 Desconstructed, " << x.PrivateX << endl; // desconstructor using
+        cout << "Child1 Desconstructed, " << x.PrivateX << endl;
     }
 };
 class Child2 : virtual public AbstractClass
