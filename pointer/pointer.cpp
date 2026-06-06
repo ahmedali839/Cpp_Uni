@@ -1,4 +1,10 @@
 #include <iostream>
+<<<<<<< HEAD
+using namespace std;
+
+class Student
+{
+=======
 #include <cstring>
 using namespace std;
 
@@ -22,10 +28,20 @@ public:
     {
         cout << str << endl;
     }
+>>>>>>> 5abfcae730b247ecd23affcd2d15f51d9b1fe630
 };
 
 int main()
 {
+<<<<<<< HEAD
+    int t = 1;
+    int *p = &t;
+
+    cout << "t: " << t << endl;
+    cout << "t: " << &t << endl;
+    cout << "p: " << p << endl;
+    cout << "p: " << *p << endl;
+=======
 
     // objects
     String strng("Ahmed Yar Hy");
@@ -62,4 +78,5 @@ int main()
     // {
     //     cout << "*arrPointer[" << i << "]" << *(arrPointer + i) << endl;
     // }
+>>>>>>> 5abfcae730b247ecd23affcd2d15f51d9b1fe630
 }
