@@ -29,7 +29,7 @@ T largerFloat(T a, T b)
 {
     if (a > b)
     {
-        cout << "Bigger is: " << a << endl; // using the template to allow all data Types
+        cout << "Bigger is: " << a << endl; 
     }
     else
     {
