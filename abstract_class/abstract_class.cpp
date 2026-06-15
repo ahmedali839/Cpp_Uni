@@ -12,7 +12,7 @@ class Student : public University
 public:
     void username()
     {
-        cout << "Here's the student" << endl; // these are abstract class examples
+        cout << "Here's the student" << endl; 
     }
 };
 
