@@ -13,7 +13,7 @@ int main()
 
     try
     {
-        // Convert string to integer
+        // Convert string to integers
         age = stoi(input);
 
         // Check if age is in valid range
