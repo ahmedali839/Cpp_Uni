@@ -3,14 +3,16 @@ using namespace std;
 
 class University
 {
+public:
     virtual void username() = 0;
 };
 
 class Student : public University
 {
+public:
     void username()
     {
-        cout << "Here's the student" << endl;
+        cout << "Here's the student" << endl; // these are abstract class examples
     }
 };
 
